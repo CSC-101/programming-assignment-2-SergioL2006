@@ -97,6 +97,24 @@ class TestCases(unittest.TestCase):
         check = [2,2,2]
         self.assertEqual(check, result)
 
+    def test_part6_1(self):
+        nums = [1,1,2,2,2,3]
+        result = hw2.longest_repetion(nums)
+        check = [2,2,2]
+        self.assertEqual(check, result)
+
+    def test_part6_2(self):
+        nums = [1,2,3]
+        result = hw2.longest_repetion(nums)
+        check = None
+        self.assertEqual(check, result)
+
+    def test_part6_2(self):
+        nums = [1,1,2,2,3]
+        result = hw2.longest_repetion(nums)
+        check = [1,1]
+        self.assertEqual(check, result)
+
 
 
 

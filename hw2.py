@@ -85,13 +85,14 @@ def longest_repetion(rep:list[int]):
         while j < (len(rep)-1):
             if rep[j] == x:
                 temp.append(rep[j])
-                j += 1
-            else:
-                if len(longest) < len(temp):
-                    longest = temp
-                    temp = []
-                    j = len(rep)
+            j += 1
+
+        if len(longest) < len(temp):
+            longest = temp
+        temp = []
         j = 0
 
+    if len(longest) == 1:
+        return None
 
     return longest
