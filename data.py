@@ -56,7 +56,6 @@ class Duration:
                 self.minutes == other.minutes and
                 self.seconds == other.seconds)
 
-
 # Representation of a song.
 class Song:
     # Initialize a new Song object.
